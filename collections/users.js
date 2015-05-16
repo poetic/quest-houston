@@ -53,7 +53,7 @@ var UserSchema = new SimpleSchema({
         optional: true
     },
     quests: {
-       type: [UserQuestSchema]
+       type: [UserQuestSchema],
        optional: true
     },
     score: {
