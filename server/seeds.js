@@ -1,5 +1,5 @@
 Meteor.startup(function(){
-  var preserveDb = Meteor.users.find().count() > 0;
+  var preserveDb = Quests.find().count() > 0;
   if (preserveDb) {
     return;
   }

@@ -1,7 +1,12 @@
+
 Template.swiperHeader.rendered = function(){
-  var mySwiper = new Swiper ('.swiper-head', {
+  var mySwiper = new Swiper ('.swiper-body', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
-  })
+    loop: false,
+  });
 };
+
+Template.swiperBody.helpers({
+  quests: Quests.find({}),
+});

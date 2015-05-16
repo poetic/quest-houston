@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+//generic
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -5,4 +8,116 @@
 * {
   transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
+}
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+p {
+	margin: 0px;
+}
+ul {
+	-webkit-padding-start: 0px;
+}
+.background {
+  width: 100vw;
+  height:100vh;
+}
+.btn {
+  width: 275px;
+  height: 48px;
+  position: relative;
+  p {
+  	position: absolute;
+  	transform: translate(-50%, -50%);
+  	top: 50%;
+  	left: 50%;
+  	width: 80%;
+  	text-align: center;
+  	color: #fff;
+  	font-size: 15px;
+  }
+  margin-bottom: 10px;
+}
+.centered {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+.centered-x {
+	margin: 0 auto;
+}
+
+//colors
+.swamp {
+  background: #273033;
+}
+.azure {
+  background: #3B5998;
+}
+.valencia {
+  background: #DD4B39;
+}
+
+//fonts
+.oswald {
+	font-family: 'Oswald', sans-serif;
+}
+.lato {
+	font-family: 'Lato', sans-serif;
+}
+.bold {
+	font-weight: 600;
+}
+
+//specific
+.splash {
+	@extend .background;
+	.logo {
+	  width: 546px;
+      height: 172px;
+	  text-align: center;
+	  img {
+	  	padding-bottom: 20px;
+	  }
+	}
+}
+.login {
+	@extend .background;
+	background: url('login_bg.png');
+	background-size: cover;
+	.container {
+		width: 276px;
+		height: 291px;
+	}
+	li {
+		@extend .oswald;
+		position: relative;
+		list-style-type: none;
+	}
+	h2 {
+		text-align: center;
+		color: #fff;
+		font-size: 27px;
+	}
+	img {
+	  width: 80px;
+	  height: 85px;
+	  display: block;
+	  margin: 0 auto;
+	}
+	.facebook {
+  	  background: url("facebook.png") #3B5998 no-repeat;
+	  background-size: 20px 35px;
+      background-position: 18px;
+	}
+	.google-plus {
+	  background: url("google.png") #DD4B39 no-repeat;
+	  background-size: 35px 35px;
+      background-position: 18px;
+	}
 }
