@@ -14,9 +14,9 @@
 
 <template name="header">
   <header class='main-header'>
-    <div class='profile-toggle'>menu</div>
+    <div class='profile-toggle'></div>
     <div class='title'>Browse Quests</div>
-    <div class='search'>search</div>
+    <div class='search'></div>
     {{> swiperHeader}}
   </header>
 </template>
@@ -26,9 +26,13 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">
+            {{#each quests}}
+            {{name}}<br>
+            {{/each}}
+          </div>
+          <div class="swiper-slide">trending</div>
+          <div class="swiper-slide">new</div>
       </div>
   </div>
 </template>

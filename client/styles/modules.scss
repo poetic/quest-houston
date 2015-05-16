@@ -4,32 +4,50 @@ body{
   width: 100%;
 }
 .main-header{
+  padding-top: 2%;
   height: 20%;
-  background-color: #343434;
+  background-color: #454545;
   color: white;
   width: 100%;
   position: absolute;
   top: 0;
 }
 .profile-toggle{
+  background-image: url('menu.png');
+  background-size: 30% 30%;
+  background-position: top center;
+  background-repeat:no-repeat;
   margin-top: 10px;
   float: left;
   width: 20%;
   padding-left: 10px;
+  &:after{
+    display: block;
+    content: "";
+    padding-top: 100%;
+  }
 }
 .title{
   text-align: center;
   margin-top: 10px;
   float: left;
-  width: 50%;
+  width: 60%;
   font-size: 22px;
 }
 .search{
+  background-image: url('search icon-menu.png');
+  background-size: 30% 30%;
+  background-position: top center;
+  background-repeat:no-repeat;
   text-align: right;
-  padding-right: 20px;
   margin-top: 10px;
   float: left;
   width: 20%;
+  &:after{
+    display: block;
+    content: "";
+    padding-top: 100%;
+  }
 }
 .swiper-head{
   text-align: center;

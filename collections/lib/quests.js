@@ -25,6 +25,9 @@ var QuestSchema = new SimpleSchema({
   categoryName: {
     type: String,
     optional: true
+  },
+  name: {
+    type: String,
   }
 });
 
