@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 //generic
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -15,6 +17,9 @@ body {
 p {
 	margin: 0px;
 }
+ul {
+	-webkit-padding-start: 0px;
+}
 .background {
   width: 100vw;
   height:100vh;
@@ -31,7 +36,9 @@ p {
   	width: 80%;
   	text-align: center;
   	color: #fff;
+  	font-size: 15px;
   }
+  margin-bottom: 10px;
 }
 .centered {
 	position: absolute;
@@ -40,6 +47,9 @@ p {
 	left: 0px;
 	bottom: 0px;
 	margin: auto;
+}
+.centered-x {
+	margin: 0 auto;
 }
 
 //colors
@@ -55,7 +65,13 @@ p {
 
 //fonts
 .oswald {
-
+	font-family: 'Oswald', sans-serif;
+}
+.lato {
+	font-family: 'Lato', sans-serif;
+}
+.bold {
+	font-weight: 600;
 }
 
 //specific
@@ -79,10 +95,29 @@ p {
 		height: 291px;
 	}
 	li {
+		@extend .oswald;
 		position: relative;
 		list-style-type: none;
 	}
+	h2 {
+		text-align: center;
+		color: #fff;
+		font-size: 27px;
+	}
 	img {
-		
+	  width: 80px;
+	  height: 85px;
+	  display: block;
+	  margin: 0 auto;
+	}
+	.facebook {
+  	  background: url("facebook.png") #3B5998 no-repeat;
+	  background-size: 20px 35px;
+      background-position: 18px;
+	}
+	.google-plus {
+	  background: url("google.png") #DD4B39 no-repeat;
+	  background-size: 35px 35px;
+      background-position: 18px;
 	}
 }
