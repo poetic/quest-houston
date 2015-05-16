@@ -8,17 +8,22 @@ var QuestVoteSchema = new SimpleSchema({
 });
 
 var QuestSchema = new SimpleSchema({
-  url: {
-    type: String,
-  },
   description: {
     type: String,
+    optional: true
   },
   locationIds: {
     type: [String],
   },
+  createdAt: {
+    type: Date,
+  },
   votes: {
     type: [QuestVoteSchema],
+    optional: true
+  },
+  categoryName: {
+    type: String,
     optional: true
   }
 });
