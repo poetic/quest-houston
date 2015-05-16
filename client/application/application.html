@@ -5,6 +5,7 @@
 <template name="home">
   {{> header}}
   <!-- {{> swiperHeader }} -->
+  {{> swiperBody}}
 </template>
 
 <template name="login">
@@ -20,8 +21,8 @@
   </header>
 </template>
 
-<template name="swiperHeader">
-  <div class="swiper-head">
+<template name="swiperBody">
+  <div class="swiper-body">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
           <!-- Slides -->
@@ -54,14 +55,14 @@
   </div>
 </template>
 
-<template name="browseQuests">
+<template name="swiperHead">
   <div class="swiper-head">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">CURATED</div>
+          <div class="swiper-slide">TRENDING</div>
+          <div class="swiper-slide">NEW</div>
       </div>
   </div>
 </template>
