@@ -4,6 +4,7 @@
 
 <template name="home">
   {{> header}}
+  {{> swiperBody}}
 </template>
 
 <template name="login">
@@ -19,8 +20,8 @@
   </header>
 </template>
 
-<template name="swiperHeader">
-  <div class="swiper-head">
+<template name="swiperBody">
+  <div class="swiper-body">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
           <!-- Slides -->
@@ -50,5 +51,17 @@
 	  		<li class="btn valencia google-plus"><p>Connect with Google</p></li>
 	  	</ul>
   	</div>
+  </div>
+</template>
+
+<template name="swiperHeader">
+  <div class="swiper-head">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">CURATED</div>
+          <div class="swiper-slide">TRENDING</div>
+          <div class="swiper-slide">NEW</div>
+      </div>
   </div>
 </template>

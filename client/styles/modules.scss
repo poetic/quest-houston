@@ -4,7 +4,7 @@ body{
   width: 100%;
 }
 .main-header{
-  height: 100px;
+  height: 20%;
   background-color: #343434;
   color: white;
   width: 100%;
@@ -34,8 +34,17 @@ body{
 .swiper-head{
   text-align: center;
   position: absolute;
-  width: 30%;
+  width: 33.3%;
   height: 50px;
   bottom: 0;
   line-height: 50px;
+}
+.swiper-body{
+  padding-top: 15px;
+  height: 80%;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
