@@ -1,4 +1,29 @@
+
 <template name="home">
+  {{> header}}
+</template>
+
+<template name="login">
   {{> loginButtons}}
-  <h1>Quest Houston</h1>
+</template>
+
+<template name="header">
+  <header class='main-header'>
+    <div class='profile-toggle'>menu</div>
+    <div class='title'>Browse Quests</div>
+    <div class='search'>search</div>
+    {{> swiperHeader}}
+  </header>
+</template>
+
+<template name="swiperHeader">
+  <div class="swiper-head">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+      </div>
+  </div>
 </template>
