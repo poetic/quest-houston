@@ -165,6 +165,13 @@ $shamrock: #3CD8B5;
 		color: inherit;
 	}
 }
+.swiper-wrapper {
+	.btn-floating {
+		position: fixed;
+		bottom: -74px;
+		right: 7px;
+	}
+}
 .active {
 	border-bottom: 5px solid #fff;
 }

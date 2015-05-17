@@ -17,4 +17,4 @@ Template.questShow.helpers({
   totalLocations: function(){
     return this.locationIds.length;
   }
-})
+});
