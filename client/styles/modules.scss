@@ -71,6 +71,31 @@ body{
   width: 100%;
   position: absolute;
   bottom: 0;
+  .complete-bar {
+    background: $stone;
+    width: 180px;
+    height: 7px;
+    border-radius: 10px;
+    margin-left: 30%;
+  }
+  .completed {
+    background: $shamrock;
+    width: 15%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .complete-amount {
+    margin-left: 30%;
+    p {
+      font-size: 16px;
+      display: inline-block;
+      padding-right: 3px;
+    }
+    .amount {
+      color: $shamrock;
+    }
+  }
 }
 .quest-image{
   width: 100%;
@@ -88,8 +113,11 @@ body{
   width: 100%;
   height: 15%;
   background: black;
+  position: relative;
+  z-index: 0;
 }
 .creator{
+  z-index: 1;
   border: 2px solid #84C63B;
   border-radius: 50%;
   position: absolute;
@@ -97,5 +125,25 @@ body{
   width: 100px;
   height: 100px;
   left: 20px;
-  background: red;
+  background-size: 100% 110%;
+  background-position: center;
+}
+.quest-master{
+  font-size: 22px;
+  margin-left: 30%;
+  padding-bottom: 5px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  span{
+    color: #84C63B;
+    text-decoration: underline;
+  }
+}
+.your-quest{
+  padding: 5px 0 0 10px;
+  margin-top: 20px;
+  height: 30px;
+  width: 100%;
+  background-color: #b4b4b4;
 }

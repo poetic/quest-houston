@@ -8,8 +8,19 @@ Router.route('/login', function () {
   });
 });
 
-Router.route('/quest:id', function(){
+Router.route('/quests/:_id', function(){
   this.render('quests', {
-
   });
+},{
+  name: 'quests',
+  data: {
+    quests: function(){
+      return Quests.findOne({});
+    },
+    location: function(){
+      return Quests.findOne({}).locationIds.map(function(id){
+        return Locations.findOne({_id: id});
+      });
+    }
+  }
 });

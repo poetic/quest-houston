@@ -1,20 +1,33 @@
 <template name='quests'>
-  {{#with quest}}
     <header class='main-header'>
       <div class='profile-toggle'></div>
-      <div class='title'>{{name}}</div>
+      <div class='title'>{{quests.name}}</div>
       <div class='search'></div>
     </header>
     <div class="quest-body">
-    <div class="quest-image" style="background-image: url({{image}})">
-      <div class="label">LANDMARKS</div>
-    </div>
-    <div class="creator"></div>
-    <div class="quest-image-footer">
-    </div>
+      {{#with quests}}
+      <div class="quest-image" style="background-image: url({{image}})">
+        <div class="label">LANDMARKS</div>
+      </div>
+      <div class="creator" style="background-image: url({{image}})"></div>
+      <div class="quest-image-footer">
+        <div class="quest-master">Quest Master: <span class='master-name'>Quest Bot</span></div>
+      </div>
+      <div class="complete-bar">
+	      <div class="completed"></div>
+      </div>
+      <div class="complete-amount">
+        <p class="amount oswald">1/8</p><p class="oswald">COMPLETED</p>
+      </div>
+      <div class='your-quest'>YOUR QUEST</div>
+      {{/with}}
+      <ul>
       {{#each location}}
-        <h1>{{name}}</h1>
+      <li>
+        <p>{{name}}</p>
+        <p>{{description}}</p>
+      </li>
       {{/each}}
+      </ul>
     </div>
-  {{/with}}
 </template>
