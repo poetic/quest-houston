@@ -49,20 +49,13 @@ ul {
 	bottom: 0px;
 	margin: auto;
 }
-.centered-x {
-	margin: 0 auto;
-}
 
 //colors
-.swamp {
-  background: #273033;
-}
-.azure {
-  background: #3B5998;
-}
-.valencia {
-  background: #DD4B39;
-}
+$swamp: #273033;
+$azure: #3B5998;
+$valencia: #DD4B39;
+$stone: #354044;
+$shamrock: #3CD8B5;
 
 //fonts
 .oswald {
@@ -96,7 +89,7 @@ ul {
 		height: 291px;
 	}
 	li {
-		@extend .oswald;
+		background: pink;
 		position: relative;
 		list-style-type: none;
 	}
@@ -141,14 +134,14 @@ ul {
 		position: relative;
 		background: lightgrey;
 		img {
-		  width: 100%;
+		  width: 122%;
 		}
 		.label {
-		  background: pink;
+		  background: $shamrock;
 		  padding: 3px 10px;
 		  position: absolute;
 		  top: 30px;
-		  color: white;
+		  color: #fff;
 		}
 		.name {
 			color: #fff;
@@ -162,6 +155,55 @@ ul {
 		height: 48px;
 		position: relative;
 		background: #fff;
-
+		.avatar {
+			width: 60px;
+			height: 60px;
+			background: $stone;
+			border: 1px solid $shamrock;
+			border-radius: 50px;
+			position: absolute;
+			top: -26px;
+			left: 12px;
+		}	
+		.complete-bar {
+			background: $stone;
+			width: 140px;
+			height: 7px;
+			border-radius: 10px;
+			position: absolute;
+			top: 10px;
+			left: 85px;
+		}
+		.completed {
+			background: $shamrock;
+			width: 10%;
+			height: 100%;
+			border-radius: 10px;
+		}
+		.complete-amount {
+			position: absolute;
+			top: 24px;
+			left: 85px;
+			p {
+				font-size: 12px;
+				display: inline-block;
+				padding-right: 3px;
+			}
+			.amount {
+				color: $shamrock;
+			}
+		}
+		.share {
+		  height: 20px;
+		  position: absolute;
+		  right: 33px;
+		  top: 15px;
+		}
+		.save {
+		  height: 20px;
+		  position: absolute;
+		  right: 8px;
+		  top: 15px;
+		}
 	}
 }
