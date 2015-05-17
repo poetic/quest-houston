@@ -32,4 +32,11 @@ Template.quests.helpers({
       });
     }
   },
+  totalLocations: function(){
+    var quest = Quests.findOne({_id: this._id});
+
+    if(quest){
+      return quest.locationIds.length;
+    }
+  }
 });
