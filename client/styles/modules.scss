@@ -11,6 +11,7 @@ body{
   display: inline-block;
   position: relative;
   min-height: 55px;
+  z-index: 100;
 }
 .profile-toggle{
   background-image: url('menu.png');
@@ -54,8 +55,8 @@ body{
   text-align: center;
   position: absolute;
   width: 33.3%;
-  height: 50px;
-  bottom: 0;
+  height: 42px;
+  bottom: 5px;
   line-height: 50px;
 }
 .swiper-body{
@@ -67,7 +68,7 @@ body{
   text-align: center;
 }
 .quest-body{
-  height: 85%;
+  height: 86%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -108,6 +109,7 @@ body{
   height: 35%;
   background-size: 100% auto;
   .label {
+    @extend .oswald;
     background: #84C63B;
 	  padding: 3px 10px;
 	  position: absolute;

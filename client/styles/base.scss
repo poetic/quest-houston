@@ -127,6 +127,11 @@ $shamrock: #3CD8B5;
 	  display: block;
 	  margin: 0 auto;
 	}
+	#at-social-btn {
+		@extend .waves-effect;
+		@extend .waves-light;
+		@extend .btn;
+	}
 	.facebook, #at-facebook {
   	  background: url("facebook.png") #3B5998 no-repeat;
 	  background-size: 20px 35px;
@@ -145,12 +150,20 @@ $shamrock: #3CD8B5;
 		@extend .btn;
 		text-transform: uppercase;
 	}
+	.at-signup-link {
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+	}
 }
 .swiper-body {
 	overflow: scroll;
 	a {
 		color: inherit;
 	}
+}
+.active {
+	border-bottom: 5px solid #fff;
 }
 .card {
 	width: 90%;
@@ -274,6 +287,7 @@ $shamrock: #3CD8B5;
   	  padding-left: 20px;
   	  width: inherit;
   	  font-size: inherit;
+  	  font-weight: bold;
     }
   }
   .share-btn {

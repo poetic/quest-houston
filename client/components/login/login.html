@@ -1,4 +1,5 @@
 <template name="Login">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- TODO: remove login div and use atForm only -->
     <div class="login">
         <div class="container centered">
@@ -12,25 +13,6 @@
           </ul>
         </div>
       </div>-->
-            <div class="at-form">
-                <div class="at-title">
-                    <h3>Sign In</h3>
-                </div>
-                <div class="at-oauth">
-                    <button class="at-social-btn" id="at-facebook" name="facebook">
-                        <i class="fa fa-facebook"></i> Configure Facebook
-                    </button>
-                    <button class="at-social-btn" id="at-google" name="google">
-                        <i class="fa fa-google"></i> Configure Google
-                    </button>
-                </div>
-                <div class="at-signup-link">
-                    <p>
-                        Don't have an account?
-                        <a href="#" id="at-signUp" class="at-link at-signup">Register</a>
-                    </p>
-                </div>
-            </div>
             {{> atForm}}
         </div>
     </div>
