@@ -1,5 +1,5 @@
-var UserQuestSchema = new SimpleSchema({
-  id: {
+var UserLocationSchema = new SimpleSchema({
+  _id: {
     type: String,
   },
   completed: {
@@ -53,8 +53,8 @@ var UserSchema = new SimpleSchema({
         type: [String],
         optional: true
     },
-    quests: {
-       type: [UserQuestSchema],
+    locations: {
+       type: [UserLocationSchema],
        optional: true
     },
     score: {
