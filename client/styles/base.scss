@@ -196,7 +196,7 @@ $shamrock: #3CD8B5;
 			position: absolute;
 			bottom: 4px;
 			left: 85px;
-		}	
+		}
 	}
 	.bottom {
 		height: 48px;
@@ -211,7 +211,7 @@ $shamrock: #3CD8B5;
 			position: absolute;
 			top: -26px;
 			left: 12px;
-		}	
+		}
 		.complete-bar {
 			background: $stone;
 			width: 140px;
@@ -305,4 +305,8 @@ $shamrock: #3CD8B5;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.at-signup-link {
+  display: none;
 }
