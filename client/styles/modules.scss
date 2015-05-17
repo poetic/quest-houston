@@ -5,12 +5,12 @@ body{
 }
 .main-header{
   padding-top: 2%;
-  height: 20%;
   background-color: #454545;
   color: white;
   width: 100%;
-  position: absolute;
-  top: 0;
+  display: inline-block;
+  position: relative;
+  min-height: 55px;
 }
 .profile-toggle{
   background-image: url('menu.png');
@@ -29,10 +29,11 @@ body{
 }
 .title{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   float: left;
   width: 60%;
-  font-size: 22px;
+  font-size: 18px;
 }
 .search{
   background-image: url('search icon-menu.png');
@@ -58,8 +59,7 @@ body{
   line-height: 50px;
 }
 .swiper-body{
-  padding-top: 15px;
-  height: 80%;
+  height: 84%;
   color: black;
   position: absolute;
   bottom: 0;
@@ -67,7 +67,7 @@ body{
   text-align: center;
 }
 .quest-body{
-  height: 80%;
+  height: 84%;
   width: 100%;
   position: absolute;
   bottom: 0;
