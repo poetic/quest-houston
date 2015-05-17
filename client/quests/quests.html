@@ -25,7 +25,7 @@
         {{#each locations}}
           <li class='quest-location'>
             <p><a href={{url}}>{{name}}</a></p>
-            <p class="unlock">UNLOCK</p>
+            <p class="unlock" data-lat={{geolocation.lat}} data-long={{geolocation.long}}>UNLOCK</p>
             <p>{{description}}</p>
             <div class="clear-fix"></div>
           </li>
