@@ -8,5 +8,7 @@ Template.swiperHeader.rendered = function(){
 };
 
 Template.swiperBody.helpers({
-  quests: Quests.find({}),
+  quests: function() {
+    return Quests.find({});
+  }
 });
