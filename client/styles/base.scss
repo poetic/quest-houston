@@ -101,8 +101,11 @@ $shamrock: #3CD8B5;
 	}
 }
 .login {
+  .at-title{
+    text-shadow: 0 0 10px black;
+  }
 	@extend .background;
-	background: url('login_bg.png');
+	background: url('login_bg.jpg');
 	background-size: cover;
 	.container {
 		width: 276px;
