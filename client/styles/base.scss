@@ -241,3 +241,48 @@ $shamrock: #3CD8B5;
 		}
 	}
 }
+.overlay {
+	background: rgba(54, 65, 69, 0.8);
+}
+.popup {
+  width: 295px;
+  height: 256px;
+  background: #fff;
+  h2 {
+  	font-size: 19px;
+	text-align: center;
+	margin: 12px auto;
+  }
+  p {
+  	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 16px;
+  }
+  .share {
+  	width: 30%;
+    margin: 24px auto;
+    img {
+      display: inline-block;
+	  height: 20px;
+	  vertical-align: middle;
+    }
+    p {
+   	  display: inline-block;
+  	  vertical-align: middle;
+  	  padding-left: 20px;
+  	  width: inherit;
+  	  font-size: inherit;
+    }
+  }
+  .share-btn {
+  	width: 100%;
+	background: #3090FF;
+	height: 44px;
+	color: #fff;
+	position: relative;
+	p {
+		line-height: 44px;
+	}
+  }
+}

@@ -1,7 +1,8 @@
 <template name="home">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{> header}}
-  {{> swiperBody}}
+  <!-- {{> header}} -->
+  <!-- {{> swiperBody}} -->
+  {{> popup}}
 </template>
 
 <template name="header">
@@ -13,6 +14,22 @@
     </div>
     {{> swiperHeader}}
   </header>
+</template>
+
+<template name="popup">
+	<div class="overlay background">
+		<div class="popup centered">
+			<h2>Congratulations!</h2>
+			<p>By checking into the Houston Technology Center, you earned <strong>500 points</strong>!</p>
+			<div class="share">
+				<img src="share.png">
+				<p>SHARE</p>
+			</div>
+			<div class="share-btn">
+				<p>OK</p>
+			</div>
+		</div>
+	</div>
 </template>
 
 <template name="swiperHeader">
