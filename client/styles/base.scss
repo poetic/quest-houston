@@ -138,10 +138,27 @@ ul {
 	}
 	.top {
 		height: 144px;
-		background: lightgrey;	
+		position: relative;
+		background: lightgrey;
+		.label {
+		  background: pink;
+		  padding: 3px 10px;
+		  position: absolute;
+		  top: 30px;
+		  color: white;
+		}
+		.name {
+			color: #fff;
+			font-size: 18px;
+			position: absolute;
+			bottom: 4px;
+			left: 85px;
+		}	
 	}
 	.bottom {
 		height: 48px;
+		position: relative;
 		background: #fff;
+
 	}
 }
