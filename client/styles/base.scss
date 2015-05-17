@@ -140,6 +140,9 @@ ul {
 		height: 144px;
 		position: relative;
 		background: lightgrey;
+		img {
+		  width: 100%;
+		}
 		.label {
 		  background: pink;
 		  padding: 3px 10px;
