@@ -9,18 +9,9 @@ Router.route('/login', function () {
 });
 
 Router.route('/quests/:_id', function(){
+  var _id = this.params._id;
+
   this.render('quests', {
+    data: { _id: _id }
   });
-},{
-  name: 'quests',
-  data: {
-    quests: function(){
-      return Quests.findOne({name: "8 Houston Wonders"});
-    },
-    location: function(){
-      return Quests.findOne({name: "8 Houston Wonders"}).locationIds.map(function(id){
-        return Locations.findOne({_id: id});
-      });
-    }
-  }
-});
+},{name: 'quests'});

@@ -1,3 +1,7 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
 <template name="home">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{> header}}
@@ -54,27 +58,27 @@
             {{name}}<br>
             {{/each}} -->
             <ul>
-            	{{#each quests}}
+              {{#each quests}}
               <a href="{{pathFor 'quests'}}">
-		            	<li class="card">
-		            		<div class="top">
-			                    <img src="{{image}}">
-			                    <p class="label oswald">Food & Drink</p>
-		            			<p class="name">{{name}}</p>
-		            		</div>
-		            		<div class="bottom">
-		            			<div class="avatar" style="background:url(profile-daila.png);background-size:cover;"></div>
-		            			<div class="complete-bar">
-		            				<div class="completed"></div>
-		            			</div>
-		            			<div class="complete-amount">
-									<p class="amount oswald">1/10</p><p class="oswald">COMPLETED</p>
-		            			</div>
-		            			<img class="share" src="share.png">
-		            			<img class="save" src="save.png">
-		            		</div>
-		            	</li>
-	            	</a>
+                <li class="card">
+                  <div class="top">
+                    <img src="{{image}}">
+                    <p class="label oswald">Food & Drink</p>
+                    <p class="name">{{name}}</p>
+                  </div>
+                  <div class="bottom">
+                    <div class="avatar" style="background:url(profile-daila.png);background-size:cover;"></div>
+                    <div class="complete-bar">
+                      <div class="completed"></div>
+                    </div>
+                    <div class="complete-amount">
+                      <p class="amount oswald">1/10</p><p class="oswald">COMPLETED</p>
+                    </div>
+                    <img class="share" src="share.png">
+                    <img class="save" src="save.png">
+                  </div>
+                </li>
+              </a>
              {{/each}}
             </ul>
             <a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a>

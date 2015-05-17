@@ -13,4 +13,19 @@ Template.quests.events({
       }
     });
   }
-})
+});
+
+Template.quests.helpers({
+  quest: function() {
+    return Quests.findOne({_id: this._id});
+  },
+  locations: function() {
+    var quest = Quests.findOne({_id: this._id});
+
+    if(quest) {
+      return quest.locationIds.map(function(id){
+        return Locations.findOne({_id: id});
+      });
+    }
+  },
+});
