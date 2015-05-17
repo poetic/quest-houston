@@ -38,9 +38,22 @@
       <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            {{#each quests}}
+            <!-- {{#each quests}}
             {{name}}<br>
-            {{/each}}
+            {{/each}} -->
+            <ul>
+            	{{#each quests}}
+	            	<li class="card">
+	            		<div class="top">
+	            			<p class="label">Food & Drink</p>
+	            			<p>{{name}}</p>
+	            		</div>
+	            		<div class="bottom">
+	            			
+	            		</div>
+	            	</li>
+            	{{/each}}
+            </ul>
           </div>
           <div class="swiper-slide">trending</div>
           <div class="swiper-slide">new</div>
