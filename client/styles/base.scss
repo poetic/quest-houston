@@ -16,6 +16,7 @@ body {
 }
 p {
 	margin: 0px;
+	@extend .lato;
 }
 ul {
 	-webkit-padding-start: 0px;
@@ -119,5 +120,28 @@ ul {
 	  background: url("google.png") #DD4B39 no-repeat;
 	  background-size: 35px 35px;
       background-position: 18px;
+	}
+}
+.swiper-body {
+	overflow: scroll;
+}
+.card {
+	width: 90%;
+	height: 192px;
+	margin: 0 auto;
+	margin-bottom: 12.5px;
+	list-style: none;
+	box-shadow: 0px 0px 2px 0px;
+	ul {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.top {
+		height: 144px;
+		background: lightgrey;	
+	}
+	.bottom {
+		height: 48px;
+		background: #fff;
 	}
 }
