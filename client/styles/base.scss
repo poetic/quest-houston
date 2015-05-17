@@ -9,6 +9,9 @@
   transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
 }
+html {
+	@extend .lato;
+}
 body {
   margin: 0px;
   width: 100%;
@@ -17,6 +20,13 @@ body {
 p {
 	margin: 0px;
 	@extend .lato;
+}
+button {
+  border-image-source: none;
+  border-image-slice: none;
+  border-image-width: none;
+  border-image-outset: none;
+  border-image-repeat: none;
 }
 ul {
 	-webkit-padding-start: 0px;
@@ -87,16 +97,19 @@ $shamrock: #3CD8B5;
 	.container {
 		width: 276px;
 		height: 291px;
+		padding: 0px;
 	}
 	li {
-		background: pink;
-		position: relative;
 		list-style-type: none;
 	}
-	h2 {
+	h2,h3 {
 		text-align: center;
 		color: #fff;
 		font-size: 27px;
+	}
+	h3 {
+		@extend .lato;
+		@extend .bold;
 	}
 	img {
 	  width: 80px;
@@ -104,19 +117,30 @@ $shamrock: #3CD8B5;
 	  display: block;
 	  margin: 0 auto;
 	}
-	.facebook {
+	.facebook, #at-facebook {
   	  background: url("facebook.png") #3B5998 no-repeat;
 	  background-size: 20px 35px;
       background-position: 18px;
 	}
-	.google-plus {
+	#at-facebook {
+		@extend .btn;
+		text-transform: uppercase;
+	}
+	.google-plus, #at-google {
 	  background: url("google.png") #DD4B39 no-repeat;
 	  background-size: 35px 35px;
       background-position: 18px;
 	}
+	#at-google {
+		@extend .btn;
+		text-transform: uppercase;
+	}
 }
 .swiper-body {
 	overflow: scroll;
+	a {
+		color: inherit;
+	}
 }
 .card {
 	width: 90%;
