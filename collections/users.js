@@ -60,6 +60,9 @@ var UserSchema = new SimpleSchema({
        type: Number,
        decimal: false,
        optional: true
+    },
+    image: {
+       type: String
     }
 });
 

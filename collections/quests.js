@@ -27,7 +27,10 @@ var QuestSchema = new SimpleSchema({
     optional: true
   },
   name: {
-    type: String,
+    type: String
+  },
+  image: {
+    type: String
   }
 });
 

@@ -27,6 +27,9 @@ var LocationSchema = new SimpleSchema({
   geolocation: {
     type: LocationGeolocationSchema,
   },
+  image: {
+     type: String
+  }
 });
 
 Locations = new Mongo.Collection('locations');
