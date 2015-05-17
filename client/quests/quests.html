@@ -17,7 +17,7 @@
 	      <div class="completed"></div>
       </div>
       <div class="complete-amount">
-        <p class="amount oswald">1/{{totalLocations}}</p><p class="oswald">COMPLETED</p>
+        <p class="amount oswald">{{countCompletedQuest _id}}/{{totalLocations}}</p><p class="oswald">COMPLETED</p>
       </div>
       <div class='your-quest'>YOUR QUEST</div>
       {{/with}}
@@ -25,7 +25,7 @@
         {{#each locations}}
           <li class='quest-location'>
             <p><a href={{url}}>{{name}}</a></p>
-            <p class="unlock" data-lat={{geolocation.lat}} data-long={{geolocation.long}}>UNLOCK</p>
+            <p class="unlock-status {{unlockStatus _id}}" data-lat={{geolocation.lat}} data-long={{geolocation.long}} data-location={{_id}}>{{unlockStatus _id}}</p>
             <p>{{description}}</p>
             <div class="clear-fix"></div>
           </li>

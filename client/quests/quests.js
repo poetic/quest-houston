@@ -3,6 +3,7 @@ Template.quests.events({
     var $btn = $(event.target);
     var locationLat  = $btn.data('lat');
     var locationLon  = $btn.data('long');
+    var locationId  = $btn.data('location');
 
     navigator.geolocation.getCurrentPosition(function(pos){
       var lat = pos.coords.latitude;
@@ -11,9 +12,24 @@ Template.quests.events({
       var londiff = Math.abs(locationLon - lon);
       console.log(latdiff, londiff);
       if(latdiff < .0005 && londiff < .0005){
-        event.target.innerHTML = "UNLOCKED";
-        event.target.classList.remove('unlock');
-        event.target.classList.add('unlocked');
+        // TODO: save to db
+        var locations = Meteor.user().locations || {};
+        var currentLocationObject = _.find(locations, function(loc){
+          return loc._id === locationId;
+        });
+
+        if(!currentLocationObject) {
+          currentLocationObject = {
+            _id: locationId,
+            completed: true,
+          };
+          locations.push(currentLocationObject );
+        }
+
+        Meteor.users.update({_id: Meteor.userId()}, {$set: {
+          locations: locations
+        }
+        });
         $('.popup-holder').show();
       }
     });
