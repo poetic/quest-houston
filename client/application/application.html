@@ -1,4 +1,5 @@
 <template name="home">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   {{> header}}
   {{> swiperBody}}
 </template>
@@ -37,8 +38,8 @@
             	{{#each quests}}
 	            	<li class="card">
 	            		<div class="top">
-	            			<img src="quest-burgers.jpg">
-	            			<p class="label oswald">Food & Drink</p>
+                    <img src="{{image}}">
+                    <p class="label oswald">Food & Drink</p>
 	            			<p class="name">{{name}}</p>
 	            		</div>
 	            		<div class="bottom">
@@ -47,7 +48,7 @@
 	            				<div class="completed"></div>
 	            			</div>
 	            			<div class="complete-amount">
-								
+
 	            			</div>
 	            		</div>
 	            	</li>
@@ -63,7 +64,7 @@
 	            			<p>{{name}}</p>
 	            		</div>
 	            		<div class="bottom">
-	            			
+
 	            		</div>
 	            	</li>
             	{{/each}}
@@ -78,7 +79,7 @@
 	            			<p class="name">{{name}}</p>
 	            		</div>
 	            		<div class="bottom">
-	            			
+
 	            		</div>
 	            	</li>
             	{{/each}}
