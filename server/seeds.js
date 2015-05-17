@@ -266,18 +266,21 @@ Meteor.startup(function(){
     createdAt: new Date(),
     name: "Downing some Brew",
     categoryName: 'Food & Drinks',
-    locationIds: quest1Locations
+    locationIds: quest1Locations,
+    path: 'quest-biking-trails.jpg'
   });
   var quest2 = Quests.insert({
     createdAt: new Date(),
     name: "Bitin' on Burgers",
     categoryName: 'Food & Drinks',
-    locationIds: quest2Locations
+    locationIds: quest2Locations,
+    path: 'quest-burgers.jpg'
   });
   var quest3 = Quests.insert({
     createdAt: new Date(),
     name: "8 Houston Wonders",
     categoryName: 'Landmarks',
-    locationIds: quest3Locations
+    locationIds: quest3Locations,
+    path: 'quest-8-wonders.jpg'
   });
 });
