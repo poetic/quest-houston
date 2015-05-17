@@ -30,6 +30,8 @@ button {
 }
 ul {
 	-webkit-padding-start: 0px;
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
 }
 .background {
   width: 100vw;
@@ -50,6 +52,14 @@ ul {
   	font-size: 15px;
   }
   margin-bottom: 10px;
+}
+.clear:before,
+.clear:after {
+  content:" ";
+  display:table;
+}
+.clear:after {
+  clear:both;
 }
 .centered {
 	position: absolute;
@@ -145,7 +155,7 @@ $shamrock: #3CD8B5;
 .card {
 	width: 90%;
 	height: 192px;
-	margin: 0 auto;
+	margin: 12.5px auto;
 	margin-bottom: 12.5px;
 	list-style: none;
 	box-shadow: 0px 0px 2px 0px;
