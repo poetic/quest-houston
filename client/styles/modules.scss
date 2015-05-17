@@ -193,7 +193,6 @@ body{
     height: 100%;
     border-radius: 25px;
   }
-
 }
 .clear-fix{
   width: 100%;
@@ -203,4 +202,9 @@ body{
 .quest-loc-list{
   margin-top: 0;
   width: 100%;
+}
+.popup-holder{
+  display: none;
+  position: fixed;
+  top: 0%;
 }

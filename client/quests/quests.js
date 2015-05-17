@@ -14,6 +14,7 @@ Template.quests.events({
         event.target.innerHTML = "UNLOCKED";
         event.target.classList.remove('unlock');
         event.target.classList.add('unlocked');
+        $('.popup-holder').show();
       }
     });
   }
@@ -40,3 +41,9 @@ Template.quests.helpers({
     }
   }
 });
+
+Template.popup.events({
+  'click .share-btn': function(event){
+    $('.popup-holder').hide();
+  }
+})
