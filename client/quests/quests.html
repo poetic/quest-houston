@@ -21,13 +21,15 @@
       </div>
       <div class='your-quest'>YOUR QUEST</div>
       {{/with}}
-      <ul>
-      {{#each location}}
-      <li>
-        <p>{{name}}</p>
-        <p>{{description}}</p>
-      </li>
-      {{/each}}
+      <ul class='quest-loc-list'>
+        {{#each location}}
+          <li class='quest-location'>
+            <p><a href={{url}}>{{name}}</a></p>
+            <p class="unlock">UNLOCK</p>
+            <p>{{description}}</p>
+            <div class="clear-fix"></div>
+          </li>
+        {{/each}}
       </ul>
     </div>
 </template>

@@ -181,7 +181,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.6847238,
       long: -95.409003,
-    }
+    },
+    description: "Check it out during the Houston Rodeo"
   });
   quest3Locations.push(location);
 
@@ -192,7 +193,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.5519,
       long: -95.092404,
-    }
+    },
+    description: "Take a tour of Mission Control"
   });
   quest3Locations.push(location);
 
@@ -203,7 +205,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.752002,
       long: -95.37551,
-    }
+    },
+    description: "Hackathon 2015!"
   });
   quest3Locations.push(location);
 
@@ -214,7 +217,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.7518045,
       long: -95.08467,
-    }
+    },
+    description: "Check out the observation floor."
   });
   quest3Locations.push(location);
 
@@ -225,7 +229,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.7617745,
       long: -95.4139944,
-    }
+    },
+    description: "Bayou Bend is the MFAH house museum for American decorative arts and paintings."
   });
   quest3Locations.push(location);
 
@@ -236,7 +241,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.7372353,
       long: -95.4631868,
-    }
+    },
+    description: "The Hines Waterwall Park, surrounded by 186 live oak trees."
   });
   quest3Locations.push(location);
 
@@ -247,7 +253,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.763752,
       long: -95.419066,
-    }
+    },
+    description: "This house is uncanny."
   });
   quest3Locations.push(location);
 
@@ -258,7 +265,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.7734365,
       long: -95.3847242,
-    }
+    },
+    description: "All you need is love."
   });
   quest3Locations.push(location);
 

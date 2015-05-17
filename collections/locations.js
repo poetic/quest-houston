@@ -28,8 +28,12 @@ var LocationSchema = new SimpleSchema({
     type: LocationGeolocationSchema,
   },
   image: {
-     type: String,
-     optional: true
+    type: String,
+    optional: true
+  },
+  description: {
+    type: String,
+    optional: true
   }
 });
 

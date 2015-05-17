@@ -15,10 +15,10 @@ Router.route('/quests/:_id', function(){
   name: 'quests',
   data: {
     quests: function(){
-      return Quests.findOne({});
+      return Quests.findOne({name: "8 Houston Wonders"});
     },
     location: function(){
-      return Quests.findOne({}).locationIds.map(function(id){
+      return Quests.findOne({name: "8 Houston Wonders"}).locationIds.map(function(id){
         return Locations.findOne({_id: id});
       });
     }

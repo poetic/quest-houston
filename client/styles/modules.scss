@@ -71,6 +71,11 @@ body{
   width: 100%;
   position: absolute;
   bottom: 0;
+  a{
+    color: #84C63B;
+    font-size: 18px;
+    text-decoration: underline;
+  }
   .complete-bar {
     background: $stone;
     width: 180px;
@@ -146,4 +151,34 @@ body{
   height: 30px;
   width: 100%;
   background-color: #b4b4b4;
+}
+.quest-location{
+  border: 1px solid #afafaf;
+  border-bottom: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  p{
+    float: left;
+    width: 51%;
+  }
+  .unlock{
+    text-align: center;
+    color: #00aaff;
+    margin-right: 5%;
+    width: 20%;
+    float: right;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #00aaff;
+  }
+}
+.clear-fix{
+  width: 100%;
+  height: 1px;
+  clear: both;
+}
+.quest-loc-list{
+  margin-top: 0;
+  width: 100%;
 }
