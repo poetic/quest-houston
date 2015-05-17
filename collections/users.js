@@ -62,7 +62,8 @@ var UserSchema = new SimpleSchema({
        optional: true
     },
     image: {
-       type: String
+       type: String,
+       optional: true
     }
 });
 
