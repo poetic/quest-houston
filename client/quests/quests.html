@@ -1,0 +1,20 @@
+<template name='quests'>
+  {{#with quest}}
+    <header class='main-header'>
+      <div class='profile-toggle'></div>
+      <div class='title'>{{name}}</div>
+      <div class='search'></div>
+    </header>
+    <div class="quest-body">
+    <div class="quest-image" style="background-image: url({{image}})">
+      <div class="label">LANDMARKS</div>
+    </div>
+    <div class="creator"></div>
+    <div class="quest-image-footer">
+    </div>
+      {{#each location}}
+        <h1>{{name}}</h1>
+      {{/each}}
+    </div>
+  {{/with}}
+</template>

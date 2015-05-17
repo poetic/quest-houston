@@ -66,3 +66,36 @@ body{
   width: 100%;
   text-align: center;
 }
+.quest-body{
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.quest-image{
+  width: 100%;
+  height: 35%;
+  background-size: 100% auto;
+  .label {
+    background: #84C63B;
+	  padding: 3px 10px;
+	  position: absolute;
+	  top: 30px;
+	  color: white;
+	}
+}
+.quest-image-footer{
+  width: 100%;
+  height: 15%;
+  background: black;
+}
+.creator{
+  border: 2px solid #84C63B;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  width: 100px;
+  height: 100px;
+  left: 20px;
+  background: red;
+}
