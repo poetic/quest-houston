@@ -266,8 +266,10 @@ $shamrock: #3CD8B5;
 }
 .overlay {
 	background: rgba(54, 65, 69, 0.8);
+	z-index: 999;
 }
 .popup {
+  z-index: 1000;
   width: 295px;
   height: 256px;
   background: #fff;
@@ -319,4 +321,15 @@ $shamrock: #3CD8B5;
 
 .at-signup-link {
   display: none;
+}
+
+.badge {
+  width: 25%;
+  height: 88px;
+  margin: 0 auto;
+  margin-top: 9px;
+  img {
+  	width: 71px;
+  	text-align: center;
+  }
 }

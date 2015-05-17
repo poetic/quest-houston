@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{> header}}
   {{> swiperBody}}
-  <!-- {{> popup}} -->
+  <!-- {{> popupBadge}} -->
 </template>
 
 <template name="header">
@@ -28,6 +28,21 @@
 			<div class="share">
 				<img src="../share.png">
 				<p>SHARE</p>
+			</div>
+			<div class="share-btn">
+				<p>OK</p>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="popupBadge">
+	<div class="overlay background">
+		<div class="popup centered">
+			<h2>Congratulations!</h2>
+			<p>You've earned the <strong>hacker society</strong> badge!</p>
+			<div class="badge">
+			  <img src="../hacker-badge.png">	
 			</div>
 			<div class="share-btn">
 				<p>OK</p>
