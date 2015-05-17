@@ -13,7 +13,7 @@ Template.quests.events({
       console.log(latdiff, londiff);
       if(latdiff < .0005 && londiff < .0005){
         // TODO: save to db
-        var locations = Meteor.user().locations || {};
+        var locations = Meteor.user().locations || [];
         var currentLocationObject = _.find(locations, function(loc){
           return loc._id === locationId;
         });
@@ -61,5 +61,13 @@ Template.quests.helpers({
 Template.popup.events({
   'click .share-btn': function(event){
     $('.popup-holder').hide();
+    $('.popup-badge-holder').show();
   }
-})
+});
+
+
+Template.popupBadge.events({
+  'click .share-btn': function(event){
+    $('.popup-badge-holder').hide();
+  }
+});
