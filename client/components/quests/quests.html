@@ -39,3 +39,27 @@
       </div>
     </div>
 </template>
+<template name="questShow">
+  {{#with quest}}
+    <a href="{{pathFor 'quests'}}">
+      <li class="card">
+        <div class="top">
+              <img src="{{image}}">
+              <p class="label oswald">Food & Drink</p>
+          <p class="name">{{name}}</p>
+        </div>
+        <div class="bottom">
+          <div class="avatar" style="background:url(profile-daila.png);background-size:cover;"></div>
+          <div class="complete-bar">
+            <div class="completed" style="width: {{percent _id}}"></div>
+          </div>
+          <div class="complete-amount">
+            <p class="amount oswald">{{countCompletedQuest _id}}/{{totalLocations}}</p><p class="oswald">COMPLETED</p>
+          </div>
+          <img class="share" src="share.png">
+          <img class="save" src="save.png">
+        </div>
+      </li>
+    </a>
+  {{/with}}
+</template>

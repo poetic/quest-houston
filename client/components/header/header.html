@@ -1,0 +1,23 @@
+<template name="header">
+  <header class='main-header'>
+    <div class="head">
+      <div class='profile-toggle'></div>
+      <div class='title'>Browse Quests</div>
+      <div class='search'></div>
+    </div>
+    {{> swiperHeader}}
+  </header>
+</template>
+
+<template name="swiperHeader">
+  <div class="swiper-head">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">CURATED</div>
+          <div class="swiper-slide active">TRENDING</div>
+          <div class="swiper-slide">NEW</div>
+      </div>
+  </div>
+</template>
+

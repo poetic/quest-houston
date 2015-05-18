@@ -9,60 +9,6 @@
   <!-- {{> popupBadge}} -->
 </template>
 
-<template name="header">
-  <header class='main-header'>
-    <div class="head">
-	    <div class='profile-toggle'></div>
-	    <div class='title'>Browse Quests</div>
-	    <div class='search'></div>
-    </div>
-    {{> swiperHeader}}
-  </header>
-</template>
-
-<template name="popup">
-	<div class="overlay background">
-		<div class="popup centered">
-			<h2>Congratulations!</h2>
-			<p>By checking into the Houston Technology Center, you earned <strong>500 points</strong>!</p>
-			<div class="share">
-				<img src="../share.png">
-				<p>SHARE</p>
-			</div>
-			<div class="share-btn">
-				<p>OK</p>
-			</div>
-		</div>
-	</div>
-</template>
-
-<template name="popupBadge">
-	<div class="overlay background">
-		<div class="popup centered">
-			<h2>Congratulations!</h2>
-			<p>You've earned the <strong>hacker society</strong> badge!</p>
-			<div class="badge">
-			  <img src="../hacker-badge.png">
-			</div>
-			<div class="share-btn">
-				<p>OK</p>
-			</div>
-		</div>
-	</div>
-</template>
-
-<template name="swiperHeader">
-  <div class="swiper-head">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">CURATED</div>
-          <div class="swiper-slide active">TRENDING</div>
-          <div class="swiper-slide">NEW</div>
-      </div>
-  </div>
-</template>
-
 <template name="swiperBody">
   <div class="swiper-body">
       <!-- Additional required wrapper -->
@@ -80,53 +26,20 @@
             <a class="btn-floating btn-large waves-effect waves-light blue"><i class="mdi-content-add"></i></a>
           </div>
           <div class="swiper-slide">
-          	<ul>
-            	{{#each quests}}
+            <ul>
+              {{#each quests}}
                 {{> questShow quest=this}}
-            	{{/each}}
+              {{/each}}
             </ul>
           </div>
           <div class="swiper-slide">
-          	<ul>
-            	{{#each quests}}
+            <ul>
+              {{#each quests}}
                 {{> questShow quest=this}}
-            	{{/each}}
+              {{/each}}
             </ul>
           </div>
       </div>
   </div>
 </template>
 
-<template name="splashScreen">
-  <div class="splash swamp">
-  	<div class="logo centered">
-  		<img src="QuestHoustonLogo.png">
-  		<img src="quest-houston-text.png">
-  	</div>
-  </div>
-</template>
-
-<template name="questShow">
-  {{#with quest}}
-    <a href="{{pathFor 'quests'}}">
-      <li class="card">
-        <div class="top">
-              <img src="{{image}}">
-              <p class="label oswald">Food & Drink</p>
-          <p class="name">{{name}}</p>
-        </div>
-        <div class="bottom">
-          <div class="avatar" style="background:url(profile-daila.png);background-size:cover;"></div>
-          <div class="complete-bar">
-            <div class="completed" style="width: {{percent _id}}"></div>
-          </div>
-          <div class="complete-amount">
-            <p class="amount oswald">{{countCompletedQuest _id}}/{{totalLocations}}</p><p class="oswald">COMPLETED</p>
-          </div>
-          <img class="share" src="share.png">
-          <img class="save" src="save.png">
-        </div>
-      </li>
-    </a>
-  {{/with}}
-</template>
