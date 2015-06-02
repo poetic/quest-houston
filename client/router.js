@@ -1,9 +1,5 @@
 Router.onBeforeAction(function () {
   // Not logged in
-  if(!Meteor.user()) {
-    this.render('Login');
-    return;
-  }
 
   this.next();
 });
