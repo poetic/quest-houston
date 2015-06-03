@@ -16,7 +16,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.748776,
       long: -95.355942,
-    }
+    },
+    description: "We are applying our craft in a dome-like warehouse located in the shadow of the Houston skyline in East Downtown. Using only the freshest ingredients of the highest quality, each batch of beer we brew undergoes strict flavor analysis and quality control. 8th Wonder: it's the 1 you want."
   });
   quest1Locations.push(location);
 
@@ -27,7 +28,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.785976,
       long: -95.814136,
-    }
+    },
+    description: "No Label Brewing Co. truly began one sunny Saturday afternoon in the spring of 2009. The Royo family was sitting on the back porch enjoying some of Brian’s homebrew. After many pints, the conversation turned to the possibility of opening our own brewery. Although none of us had any experience running a brewery, we decided to give it a try."
   });
   quest1Locations.push(location);
 
@@ -38,7 +40,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.7714249,
       long: -95.3486299,
-    }
+    },
+    description: "The Saint Arnold Brewing Company is a brewery in Houston, Texas, USA, named after a patron saint of brewing, Saint Arnulf of Metz. It was founded in 1994 by Brock Wagner and Kevin Bartol, graduates of Rice University. The brewery offers tours every weekday & Saturday afternoons which have attracted a large following. Saint Arnold has won numerous national and international awards."
   });
   quest1Locations.push(location);
 
@@ -49,7 +52,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.775965,
       long: -95.416088,
-    }
+    },
+    description: "Buffalo Bayou Brewing Company is a new twist on an old craft. With creativity as our main goal, we subscribe to our own definitions regarding brewing parameters and guidelines, without sacrificing flavor or consistency."
   });
   quest1Locations.push(location);
 
@@ -60,7 +64,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.805991,
       long: -95.460715,
-    }
+    },
+    description: "Our background is in the beer biz.  Everything from distribution and importing to German training and brewery operations.  A few years ago we had an opportunity that would allow us to open up our own brewery.  We jumped on it."
   });
   quest1Locations.push(location);
 
@@ -71,7 +76,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 30.346211,
       long: -95.432487,
-    }
+    },
+    description: "We started production March 2008. Contrary to popular belief, the first beer we ever brewed was our Pine Belt Pale Ale. Shortly after, we added Bombshell Blonde and Buried Hatchet Stout to the list of year round releases."
   });
   quest1Locations.push(location);
 
@@ -82,7 +88,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.734293,
       long: -95.387222,
-    }
+    },
+    description: "Hip eatery & bar with upscale comfort classics & an expansive outdoor area with bocce & croquet."
   });
   quest2Locations.push(location);
 
