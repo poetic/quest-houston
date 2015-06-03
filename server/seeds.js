@@ -82,7 +82,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.734293,
       long: -95.387222,
-    }
+    },
+    description: "Try the Clubhouse Burger!"
   });
   quest2Locations.push(location);
 
@@ -93,7 +94,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.760118,
       long: -95.360568,
-    }
+    },
+    description: "Voted the best burger in Houston by Houstonians!"
   });
   quest2Locations.push(location);
 
@@ -104,7 +106,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.821291,
       long: -95.424452,
-    }
+    },
+    description: "This burger is substantial."
   });
   quest2Locations.push(location);
 
@@ -115,7 +118,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.770945,
       long: -95.372128,
-    }
+    },
+    description: "Every single bite is an explosion of textures, temperature, and flavor."
   });
   quest2Locations.push(location);
 
@@ -126,7 +130,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.74435,
       long: -95.393022,
-    }
+    },
+    description: "The flavors in the burger are really great."
   });
   quest2Locations.push(location);
 
@@ -137,7 +142,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.767224,
       long: -95.409727,
-    }
+    },
+    description: "Cooked to juicy perfection."
   });
   quest2Locations.push(location);
 
@@ -148,7 +154,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.7672,
       long: -95.382224,
-    }
+    },
+    description: "This burger is HUGE!"
   });
   quest2Locations.push(location);
 
@@ -159,7 +166,8 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.750013,
       long: -95.383893,
-    }
+    },
+    description: "If you're interested in 'licking the volcano out of Flavortown'"
   });
   quest2Locations.push(location);
 
@@ -170,13 +178,14 @@ Meteor.startup(function(){
     geolocation: {
       lat: 29.81762,
       long: -95.409858,
-    }
+    },
+    description: "Stylish burger spot."
   });
   quest2Locations.push(location);
 
   location = Locations.insert({
     name: "Houston Astrodome",
-    url: "",
+    url: "An incredible pick of Texas Wagyu Kobe beef burgers.",
     address: "8400 Kirby Drive, Houston, Texas, 77054",
     geolocation: {
       lat: 29.6847238,
