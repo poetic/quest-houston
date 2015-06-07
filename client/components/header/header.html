@@ -11,7 +11,9 @@
         <i class="small mdi-action-search"></i>
       </div>
     </div>
-    {{> swiperHeader}}
+    {{#if swiperHeader}}
+      {{> swiperHeader}}
+    {{/if}}
     {{> menu}}
   </header>
 </template>

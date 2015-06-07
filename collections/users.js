@@ -12,6 +12,15 @@ var UserLocationSchema = new SimpleSchema({
   }
 });
 
+var UserBadgeSchema = new SimpleSchema({
+  name: {
+    type: String,
+  },
+  image: {
+    type: String,
+  }
+});
+
 var UserProfileSchema = new SimpleSchema({
 });
 
@@ -64,6 +73,10 @@ var UserSchema = new SimpleSchema({
     },
     image: {
        type: String,
+       optional: true
+    },
+    badges: {
+       type: [UserBadgeSchema],
        optional: true
     }
 });
