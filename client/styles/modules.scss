@@ -230,6 +230,37 @@ a{
   z-index: 10 !important;
 }
 .side-nav{
-  padding-left: 15px;
   color: black;
+  li{
+    border-bottom: 1px solid #afafaf;
+  }
+}
+.avatar{
+  margin: 0px auto 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #3090FF;
+  img{
+    width: 100%;
+  }
+}
+.profile-header{
+  padding-top: 20px;
+  background-color: rgb(246, 246, 246);
+}
+.side-nav{
+  background-color: rgb(255, 255, 255);
+}
+.profile-name{
+  text-align: center;
+  font-size: 23px;
+}
+.profile-points{
+  padding-left: 25px;
+  font-size: 16px;
+}
+.profile-score{
+  color: #3090ff;
 }

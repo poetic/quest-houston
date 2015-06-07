@@ -1,6 +1,6 @@
 Template.menu.rendered = function(){
   $(".button-collapse").sideNav();
-}
+};
 
 Template.menu.helpers({
   user: function(){
@@ -11,7 +11,11 @@ Template.menu.helpers({
     return user.services.facebook.name;
   },
   score: function(){
-    var score = Meteor.users.findOne({_id: Meteor.userId()});
-    console.log(score.score);
+    var score = Meteor.users.findOne({_id: Meteor.userId()}).score;
+    return score;
+  },
+  avatar: function(){
+    var avatar = "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large";
+    return avatar;
   }
 });

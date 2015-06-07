@@ -1,10 +1,18 @@
 <template name="menu">
    <nav>
     <div class="nav-wrapper blue-grey darken-4">
-      <div class="side-nav  light-blue" id="mobile-demo">
-        <div><p>{{name}}</p></div>
-        <div><p>Points: {{score}}</p></div>
-        <div><p>Badges: </p></div>
+      <div class="side-nav" id="mobile-demo">
+        <div class="profile-header">
+          <div class='avatar'><img src={{avatar}}></div>
+          <div><p class='profile-name'>{{name}}</p></div>
+          <div><p class='profile-points'>Points: <span class='profile-score'>{{score}}</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;Badges: <span class='profile-score'>1</span></p></div>
+        </div>
+        <ul>
+          <li><a href="">Browse Quests</a></li>
+          <li><a href="">Saved Quests</a></li>
+          <li><a href="">My Profile</a></li>
+        </ul>
       </div>
     </div>
   </nav>
