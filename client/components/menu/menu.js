@@ -9,5 +9,9 @@ Template.menu.helpers({
   name: function(){
     var user = Meteor.user();
     return user.services.facebook.name;
+  },
+  score: function(){
+    var score = Meteor.users.findOne({_id: Meteor.userId()});
+    console.log(score.score);
   }
 });

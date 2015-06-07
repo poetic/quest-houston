@@ -13,6 +13,7 @@ Template.quests.events({
       console.log(latdiff, londiff);
       if(latdiff < .0005 && londiff < .0005){
         // TODO: save to db
+        var points = Meteor.user().points || 0;
         var locations = Meteor.user().locations || [];
         var currentLocationObject = _.find(locations, function(loc){
           return loc._id === locationId;
@@ -24,10 +25,15 @@ Template.quests.events({
             completed: true,
           };
           locations.push(currentLocationObject );
+          points += 250;
         }
-
+        console.log('points', points);
         Meteor.users.update({_id: Meteor.userId()}, {$set: {
-          locations: locations
+          locations: locations,
+        }
+        });
+        Meteor.users.update({_id: Meteor.userId()}, {$set: {
+          score: points
         }
         });
         $('.popup-holder').show();
