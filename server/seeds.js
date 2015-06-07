@@ -8,6 +8,7 @@ Meteor.startup(function(){
   var quest1Locations = [];
   var quest2Locations = [];
   var quest3Locations = [];
+  var quest4Locations = [];
 
   location = Locations.insert({
     name: "8 Wonder Brew",
@@ -279,6 +280,19 @@ Meteor.startup(function(){
   });
   quest3Locations.push(location);
 
+  location = Locations.insert({
+    name: "myHouse",
+    url: "",
+    address: "16103 Waycreek Houston, TX 77068",
+    geolocation: {
+      lat: 30.0102269,
+      long: -95.46955
+    },
+    description: "My house for testing unlocks and badges"
+  });
+  console.log(location);
+  quest4Locations.push(location);
+
   var quest1 = Quests.insert({
     createdAt: new Date(),
     name: "Downing some Brew",
@@ -298,6 +312,14 @@ Meteor.startup(function(){
     name: "8 Houston Wonders",
     categoryName: 'Landmarks',
     locationIds: quest3Locations,
+    image: '../quest-8-wonders.jpg'
+  });
+  console.log(quest4Locations);
+  var quest4 = Quests.insert({
+    createdAt: new Date(),
+    name: "Test locations",
+    categoryName: 'Testing',
+    locationIds: quest4Locations,
     image: '../quest-8-wonders.jpg'
   });
 });

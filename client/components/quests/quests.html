@@ -1,65 +1,41 @@
 <template name='quests'>
-    <header class='main-header'>
-      <div class='profile-toggle'></div>
-      <div class='title'>{{quest.name}}</div>
-      <div class='search'></div>
-    </header>
-    <div class="quest-body">
-      {{#with quest}}
-      <div class="quest-image" style="background-image: url({{image}});background-size:cover;">
-        <div class="label">LANDMARKS</div>
-      </div>
-      <div class="creator" style="background-image: url(../questbot.png);"></div>
-      <div class="quest-image-footer">
-        <div class="quest-master">Quest Master: <span class='master-name'>Quest Bot</span></div>
-      </div>
-      <div class="complete-bar">
-        <div class="completed" style="width: {{percent _id}}"></div>
-      </div>
-      <div class="complete-amount">
-        <p class="amount oswald">{{countCompletedQuest _id}}/{{totalLocations}}</p><p class="oswald">COMPLETED</p>
-      </div>
-      <div class='your-quest'>YOUR QUEST</div>
-      {{/with}}
-      <ul class='quest-loc-list'>
-        {{#each locations}}
-          <li class='quest-location'>
-            <p><a href={{url}}>{{name}}</a></p>
-            <p class="unlock-status {{unlockStatus _id}}" data-lat={{geolocation.lat}} data-long={{geolocation.long}} data-location={{_id}}>{{unlockStatus _id}}</p>
-            <p>{{description}}</p>
-            <div class="clear-fix"></div>
-          </li>
-        {{/each}}
-      </ul>
-      <div class="popup-holder">
-        {{> popup}}
-      </div>
-      <div class="popup-badge-holder">
-        {{> popupBadge}}
-      </div>
+  <header class='main-header'>
+    <div class='profile-toggle'></div>
+    <div class='title'>{{quest.name}}</div>
+    <div class='search'></div>
+  </header>
+  <div class="quest-body">
+    {{#with quest}}
+    <div class="quest-image" style="background-image: url({{image}});background-size:cover;">
+      <div class="label">LANDMARKS</div>
     </div>
-</template>
-<template name="questShow">
-  {{#with quest}}
-    <a href="{{pathFor 'quests'}}">
-      <li class="card">
-        <div class="top">
-              <img src="{{image}}">
-              <p class="label oswald">Food & Drink</p>
-          <p class="name">{{name}}</p>
-        </div>
-        <div class="bottom">
-          <div class="avatar" style="background:url(profile-daila.png);background-size:cover;"></div>
-          <div class="complete-bar">
-            <div class="completed" style="width: {{percent _id}}"></div>
-          </div>
-          <div class="complete-amount">
-            <p class="amount oswald">{{countCompletedQuest _id}}/{{totalLocations}}</p><p class="oswald">COMPLETED</p>
-          </div>
-          <img class="share" src="share.png">
-          <img class="save" src="save.png">
-        </div>
-      </li>
-    </a>
-  {{/with}}
+    <div class="creator" style="background-image: url(../questbot.png);"></div>
+    <div class="quest-image-footer">
+      <div class="quest-master">Quest Master: <span class='master-name'>Quest Bot</span></div>
+    </div>
+    <div class="complete-bar">
+      <div class="completed" style="width: {{percent _id}}"></div>
+    </div>
+    <div class="complete-amount">
+      <p class="amount oswald">{{countCompletedQuest _id}}/{{totalLocations}}</p><p class="oswald">COMPLETED</p>
+    </div>
+    <div class='your-quest'>YOUR QUEST</div>
+    {{/with}}
+    <ul class='quest-loc-list'>
+      {{#each locations}}
+        <li class='quest-location'>
+          <p><a href={{url}}>{{name}}</a></p>
+          <p class="unlock-status {{unlockStatus _id}}" data-lat={{geolocation.lat}} data-long={{geolocation.long}} data-location={{_id}}>{{unlockStatus _id}}</p>
+          <p>{{description}}</p>
+          <div class="clear-fix"></div>
+        </li>
+      {{/each}}
+    </ul>
+    <div class="popup-holder">
+      {{> popup}}
+    </div>
+    <div class="popup-badge-holder">
+      {{> popupBadge}}
+    </div>
+  </div>
 </template>
