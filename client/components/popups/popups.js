@@ -10,3 +10,12 @@ Template.popupBadge.events({
     $('.popup-badge-holder').hide();
   }
 });
+
+Template.popup.helpers({
+  points: 250,
+});
+
+Template.popupBadge.helpers({
+  name: 'Hackers Society',
+  image: '../hacker-badge.png'
+});
