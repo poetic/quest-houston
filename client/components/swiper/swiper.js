@@ -1,5 +1,5 @@
 Template.swiperBody.rendered = function(){
-  var mySwiper = new Swiper ('.swiper-body', {
+  Meteor.mySwiper = new Swiper ('.swiper-body', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
