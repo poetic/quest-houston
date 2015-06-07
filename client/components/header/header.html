@@ -1,11 +1,18 @@
 <template name="header">
-  <header class='main-header'>
+  <header class='main-header blue-grey'>
     <div class="head">
-      <div class='profile-toggle'></div>
+      <div class='profile-toggle'>
+        <a href="#" data-activates="mobile-demo" class="button-collapse">
+          <i class="small mdi-navigation-menu"></i>
+        </a>
+      </div>
       <div class='title'>Browse Quests</div>
-      <div class='search'></div>
+      <div class='search'>
+        <i class="small mdi-action-search"></i>
+      </div>
     </div>
     {{> swiperHeader}}
+    {{> menu}}
   </header>
 </template>
 
@@ -14,8 +21,8 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide curated">CURATED</div>
-          <div class="swiper-slide active trending">TRENDING</div>
+          <div class="swiper-slide active curated">CURATED</div>
+          <div class="swiper-slide trending">TRENDING</div>
           <div class="swiper-slide new">NEW</div>
       </div>
   </div>

@@ -15,19 +15,20 @@ body{
   z-index: 100;
 }
 .profile-toggle{
-  background-image: url('menu.png');
-  background-size: 30% 18px;
-  background-position: top center;
-  background-repeat:no-repeat;
-  margin-top: 10px;
   float: left;
   width: 20%;
   padding-left: 10px;
   &:after{
     display: block;
     content: "";
-    padding-top: 100%;
+    padding-top: 50%;
   }
+  a{
+    position: absolute;
+    top: 0;
+    line-height: 1;
+  }
+  margin-bottom: 15px;
 }
 .title{
   text-align: center;
@@ -38,19 +39,13 @@ body{
   font-size: 18px;
 }
 .search{
-  background-image: url('search icon-menu.png');
-  background-size: 30% 30%;
-  background-position: top center;
-  background-repeat:no-repeat;
   text-align: right;
   margin-top: 10px;
   float: left;
   width: 20%;
-  &:after{
-    display: block;
-    content: "";
-    padding-top: 100%;
-  }
+  height: 40px;
+  line-height: .6;
+  padding-right: 15px;
 }
 .swiper-head{
   text-align: center;
@@ -217,4 +212,18 @@ body{
 
 .unlock-status {
   text-transform: uppercase;
+}
+nav{
+  box-shadow: none;
+}
+.head{
+  position: relative;
+  z-index: 2;
+}
+a{
+  color: white;
+  text-dectoration: none;
+}
+#sidenav-overlay{
+  z-index: 10 !important;
 }
