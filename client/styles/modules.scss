@@ -211,6 +211,8 @@ body{
 }
 nav{
   box-shadow: none;
+  position: absolute;
+  top: 0;
 }
 .head{
   position: relative;
@@ -257,4 +259,11 @@ a{
 }
 .profile-score{
   color: #3090ff;
+}
+.back-button{
+  margin-left: 15px;
+  background-color: $valencia;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px white;
+  height: 10px;
 }

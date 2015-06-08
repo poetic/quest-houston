@@ -10,6 +10,9 @@ Template.header.events({
   'click .new': function(e){
     activate(e.target);
     Meteor.mySwiper.slideTo(2);
+  },
+  'click .back-button': function(){
+    history.back();
   }
 });
 
