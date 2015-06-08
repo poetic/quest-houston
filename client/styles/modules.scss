@@ -102,7 +102,6 @@ body{
   background-size: 100% auto;
   .label {
     @extend .oswald;
-    background: #84C63B;
 	  padding: 3px 10px;
 	  position: absolute;
 	  top: 30px;
@@ -276,4 +275,13 @@ a{
   margin-bottom: 0;
   top: 110px;
   padding-top: 5px;
+}
+.food{
+  background-color: rgb(60, 216, 181);
+}
+.landmark{
+  background-color: rgb(132, 198, 59);
+}
+.testing{
+  background-color: $valencia;
 }

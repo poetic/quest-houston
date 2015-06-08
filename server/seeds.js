@@ -294,8 +294,10 @@ Meteor.startup(function(){
     url: "",
     address: "16103 Waycreek Houston, TX 77068",
     geolocation: {
-      lat: 30.0102269,
-      long: -95.46955
+      lat: 29.761565099999995,
+      long: -95.4791111
+      // lat: 30.0102269,
+      // long: -95.46955
     },
     description: "My house for testing unlocks and badges"
   });
@@ -306,8 +308,8 @@ Meteor.startup(function(){
     url: "",
     address: "16103 Waycreek Houston, TX 77068",
     geolocation: {
-      lat: 30.0102269,
-      long: -95.46955
+      lat: 29.761565099999995,
+      long: -95.4791111
     },
     description: "My house for testing unlocks and badges"
   });
@@ -318,8 +320,8 @@ Meteor.startup(function(){
     url: "",
     address: "16103 Waycreek Houston, TX 77068",
     geolocation: {
-      lat: 30.0102269,
-      long: -95.46955
+      lat: 29.761565099999995,
+      long: -95.4791111
     },
     description: "My house for testing unlocks and badges"
   });
@@ -330,8 +332,8 @@ Meteor.startup(function(){
     url: "",
     address: "16103 Waycreek Houston, TX 77068",
     geolocation: {
-      lat: 30.0102269,
-      long: -95.46955
+      lat: 29.761565099999995,
+      long: -95.4791111
     },
     description: "My house for testing unlocks and badges"
   });
@@ -342,8 +344,8 @@ Meteor.startup(function(){
     url: "",
     address: "16103 Waycreek Houston, TX 77068",
     geolocation: {
-      lat: 30.0102269,
-      long: -95.46955
+      lat: 29.761565099999995,
+      long: -95.4791111
     },
     description: "My house for testing unlocks and badges"
   });

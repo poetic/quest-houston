@@ -6,6 +6,7 @@ Meteor.BadgeManager = (function(){
   Interface.checkForBadges = function(){
     console.log('checking for badges');
     badge = lookForLocationBadges();
+    console.log(badge);
     if(badge){
       console.log('badge found');
       this.Badge = badge;

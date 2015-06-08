@@ -63,12 +63,28 @@ Template.quests.helpers({
     if(quest){
       return quest.locationIds.length;
     }
+  },
+  label: function(){
+    switch(this.categoryName){
+      case "Food & Drinks": return "food";
+      case "Landmarks": return "landmark";
+      case "Testing": return "testing";
+    }
+    return "food";
   }
 });
 
 Template.questShow.helpers({
   totalLocations: function(){
     return this.locationIds.length;
+  },
+  label: function(){
+    switch(this.categoryName){
+      case "Food & Drinks": return "food";
+      case "Landmarks": return "landmark";
+      case "Testing": return "testing";
+    }
+    return "food";
   }
 });
 
