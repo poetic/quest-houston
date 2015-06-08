@@ -13,7 +13,7 @@ Template.quests.events({
       console.log(latdiff, londiff);
       if(latdiff < .0005 && londiff < .0005){
         // TODO: save to db
-        var points = Meteor.user().points || 0;
+        var points = Meteor.user().score || 0;
         var locations = Meteor.user().locations || [];
         var currentLocationObject = _.find(locations, function(loc){
           return loc._id === locationId;

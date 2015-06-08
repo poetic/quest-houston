@@ -1,7 +1,10 @@
 Template.popup.events({
   'click .share-btn': function(event){
     $('.popup-holder').hide();
-    $('.popup-badge-holder').show();
+    Meteor.BadgeManager.checkForBadges();
+    if(Meteor.BadgeManager.Badge){
+      $('.popup-badge-holder').show();
+    }
   }
 });
 
@@ -17,9 +20,9 @@ Template.popup.helpers({
 
 Template.popupBadge.helpers({
   name: function(){
-    return Badges.findOne({name: "Hackers Society"}).name;
+    return Meteor.BadgeManager.Badge.name;
   },
   image: function(){
-    return Badges.findOne({image: '../badges/firstlocation.png'}).image;
+    return Meteor.BadgeManager.Badge.image;
   }
 });

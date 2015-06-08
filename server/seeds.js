@@ -10,7 +10,8 @@ Meteor.startup(function(){
   var quest3Locations = [];
   var quest4Locations = [];
 
-  seedBadges();
+  if(Badges.find().count() < 1)
+    seedBadges();
 
   location = Locations.insert({
     name: "8 Wonder Brew",
@@ -298,7 +299,18 @@ Meteor.startup(function(){
     },
     description: "My house for testing unlocks and badges"
   });
-  console.log(location);
+  quest4Locations.push(location);
+
+  location = Locations.insert({
+    name: "myHouse",
+    url: "",
+    address: "16103 Waycreek Houston, TX 77068",
+    geolocation: {
+      lat: 30.0102269,
+      long: -95.46955
+    },
+    description: "My house for testing unlocks and badges"
+  });
   quest4Locations.push(location);
 
   var quest1 = Quests.insert({
@@ -322,7 +334,6 @@ Meteor.startup(function(){
     locationIds: quest3Locations,
     image: '../quest-8-wonders.jpg'
   });
-  console.log(quest4Locations);
   var quest4 = Quests.insert({
     createdAt: new Date(),
     name: "Test locations",
@@ -338,7 +349,7 @@ function seedBadges(){
     image: "../hacker-badge.png"
   });
   Badges.insert({
-    name: "Hackers Society",
+    name: "First Location",
     image: "../badges/firstlocation.png"
   });
 }
