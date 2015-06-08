@@ -265,5 +265,15 @@ a{
   background-color: $valencia;
   border-radius: 50%;
   box-shadow: 1px 1px 5px white;
-  height: 10px;
+}
+.name{
+  text-shadow: 1px 1px 8px black;
+  width: 100%;
+  position: absolute !important;
+  left: 0 !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 35px;
+  margin-bottom: 0;
+  top: 110px;
+  padding-top: 5px;
 }

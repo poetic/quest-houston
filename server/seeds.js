@@ -306,7 +306,7 @@ Meteor.startup(function(){
     name: "Downing some Brew",
     categoryName: 'Food & Drinks',
     locationIds: quest1Locations,
-    image: '../quest-biking-trails.png'
+    image: '../brews.jpg'
   });
   var quest2 = Quests.insert({
     createdAt: new Date(),
