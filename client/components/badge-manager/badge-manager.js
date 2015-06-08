@@ -7,7 +7,9 @@ Meteor.BadgeManager = (function(){
     console.log('checking for badges');
     badge = lookForLocationBadges();
     if(badge){
+      console.log('badge found');
       this.Badge = badge;
+      insertBadges();
     }
     else{
       this.Badge = false;
@@ -17,9 +19,16 @@ Meteor.BadgeManager = (function(){
   return Interface;
 })();
 
+function insertBadges(){
+  console.log('inserting');
+  $('.badge-name').html(Meteor.BadgeManager.Badge.name);
+  $('.badge').html('<img src=\"' + Meteor.BadgeManager.Badge.image + '\">');
+}
+
 function lookForLocationBadges(){
   switch(Meteor.user().locations.length){
     case 1: return Badges.findOne({name: 'First Location'}); break;
+    case 5: return Badges.findOne({name: 'Five Locations'}); break;
     default: return false;
   }
 }

@@ -2,7 +2,7 @@ Template.popup.events({
   'click .share-btn': function(event){
     $('.popup-holder').hide();
     Meteor.BadgeManager.checkForBadges();
-    if(Meteor.BadgeManager.Badge){
+    if(Meteor.BadgeManager.Badge.name){
       $('.popup-badge-holder').show();
     }
   }
@@ -18,11 +18,14 @@ Template.popup.helpers({
   points: 250,
 });
 
+
 Template.popupBadge.helpers({
-  name: function(){
-    return Meteor.BadgeManager.Badge.name;
-  },
-  image: function(){
-    return Meteor.BadgeManager.Badge.image;
-  }
+  // name: function(){
+  //   console.log(Meteor.BadgeManager.Badge);
+  //   return badgeName;
+  // },
+  // image: function(){
+  //   console.log(Meteor.BadgeManager.Badge.image);
+  //   return Meteor.BadgeManager.Badge.image;
+  // }
 });

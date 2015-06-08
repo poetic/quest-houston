@@ -313,6 +313,42 @@ Meteor.startup(function(){
   });
   quest4Locations.push(location);
 
+  location = Locations.insert({
+    name: "myHouse",
+    url: "",
+    address: "16103 Waycreek Houston, TX 77068",
+    geolocation: {
+      lat: 30.0102269,
+      long: -95.46955
+    },
+    description: "My house for testing unlocks and badges"
+  });
+  quest4Locations.push(location);
+
+  location = Locations.insert({
+    name: "myHouse",
+    url: "",
+    address: "16103 Waycreek Houston, TX 77068",
+    geolocation: {
+      lat: 30.0102269,
+      long: -95.46955
+    },
+    description: "My house for testing unlocks and badges"
+  });
+  quest4Locations.push(location)
+
+  location = Locations.insert({
+    name: "myHouse",
+    url: "",
+    address: "16103 Waycreek Houston, TX 77068",
+    geolocation: {
+      lat: 30.0102269,
+      long: -95.46955
+    },
+    description: "My house for testing unlocks and badges"
+  });
+  quest4Locations.push(location);
+
   var quest1 = Quests.insert({
     createdAt: new Date(),
     name: "Downing some Brew",
@@ -352,4 +388,9 @@ function seedBadges(){
     name: "First Location",
     image: "../badges/firstlocation.png"
   });
+  Badges.insert({
+    name: "Five Locations",
+    image: "../badges/5locations.png"
+  });
+
 }
