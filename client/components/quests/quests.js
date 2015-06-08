@@ -27,7 +27,6 @@ Template.quests.events({
           locations.push(currentLocationObject );
           points += 250;
         }
-        console.log('points', points);
         Meteor.users.update({_id: Meteor.userId()}, {$set: {
           locations: locations,
         }
@@ -37,6 +36,9 @@ Template.quests.events({
         }
         });
         $('.popup-holder').show();
+      }
+      else{
+        Materialize.toast("Looks like you aren't close enough", 2000);
       }
     });
   }
