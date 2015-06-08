@@ -10,6 +10,8 @@ Meteor.startup(function(){
   var quest3Locations = [];
   var quest4Locations = [];
 
+  seedBadges();
+
   location = Locations.insert({
     name: "8 Wonder Brew",
     url: "http://8thwonderbrew.com/",
@@ -329,3 +331,14 @@ Meteor.startup(function(){
     image: '../quest-8-wonders.jpg'
   });
 });
+
+function seedBadges(){
+  Badges.insert({
+    name: "Hackers Society",
+    image: "../hacker-badge.png"
+  });
+  Badges.insert({
+    name: "Hackers Society",
+    image: "../badges/firstlocation.png"
+  });
+}

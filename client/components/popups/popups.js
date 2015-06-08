@@ -16,6 +16,10 @@ Template.popup.helpers({
 });
 
 Template.popupBadge.helpers({
-  name: 'Hackers Society',
-  image: '../hacker-badge.png'
+  name: function(){
+    return Badges.findOne({name: "Hackers Society"}).name;
+  },
+  image: function(){
+    return Badges.findOne({image: '../badges/firstlocation.png'}).image;
+  }
 });
