@@ -9,3 +9,4 @@ var BadgeSchema = new SimpleSchema({
 
 Badges = new Mongo.Collection('badges');
 Badges.attachSchema(BadgeSchema);
+

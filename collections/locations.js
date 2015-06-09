@@ -34,6 +34,10 @@ var LocationSchema = new SimpleSchema({
   description: {
     type: String,
     optional: true
+  },
+  categoryName: {
+    type: String,
+    optional: true
   }
 });
 
