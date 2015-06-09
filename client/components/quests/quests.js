@@ -1,9 +1,11 @@
 Template.quests.events({
   'click .unlock': function(event){
+    Materialize.toast("Checking your current location.", 2000);
     var $btn = $(event.target);
     var locationLat  = $btn.data('lat');
     var locationLon  = $btn.data('long');
     var locationId  = $btn.data('location');
+    Meteor.location = Locations.findOne({_id: locationId});
 
     navigator.geolocation.getCurrentPosition(function(pos){
       var lat = pos.coords.latitude;
@@ -35,6 +37,7 @@ Template.quests.events({
           score: points
         }
         });
+        $('#popup-location-name').html(Meteor.location.name);
         $('.popup-holder').show();
       }
       else{

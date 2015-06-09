@@ -3,6 +3,7 @@ Template.popup.events({
     $('.popup-holder').hide();
     Meteor.BadgeManager.checkForBadges();
     if(Meteor.BadgeManager.Badge.name){
+      Meteor.users.update(Meteor.userId(), { $addToSet: { badges: {name: Meteor.BadgeManager.Badge.name, image: Meteor.BadgeManager.Badge.image}}});
       $('.popup-badge-holder').show();
     }
   }
@@ -16,6 +17,9 @@ Template.popupBadge.events({
 
 Template.popup.helpers({
   points: 250,
+  location: function(){
+    return Meteor.location.name;
+  }
 });
 
 

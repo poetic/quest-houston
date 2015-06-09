@@ -6,13 +6,16 @@
           <div class='avatar'><img src={{avatar}}></div>
           <div><p class='profile-name'>{{name}}</p></div>
           <div><p class='profile-points'>Points: <span class='profile-score'>{{score}}</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;Badges: <span class='profile-score'>1</span></p></div>
+            &nbsp;&nbsp;&nbsp;&nbsp;Badges: <span class='profile-score'>{{badgeCount}}</span></p></div>
         </div>
         <ul>
           <li><a href="">Browse Quests</a></li>
           <li><a href="">My Saved Quests</a></li>
           <li><a href="">Profile</a></li>
         </ul>
+        {{#each badges}}
+          <img class='user-badge-list' src={{image}}>
+        {{/each}}
       </div>
     </div>
   </nav>
