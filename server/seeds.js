@@ -155,7 +155,7 @@ function addTestQuest(q){
   q.clear();
   for(var x = 0; x < 8; x++){
     q.addLocation(insertLocationGetUuid("testLocation", "1",
-                                  "1", myHouse.lat, myHouse.long,
+                                  "1", poetic.lat, poetic.long,
                                   "location for testing badges",
                                   "Testing"));
   }

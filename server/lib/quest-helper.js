@@ -18,12 +18,12 @@ Meteor.startup(function(){
     // Append a location to the locations array
     Interface.addLocation = function(locationId){
       locations.push(locationId);
-    }
+    };
 
     // accept an array of uuids to initialize locations as
     Interface.addAllAsArray = function(arr){
       locations = arr;
-    }
+    };
 
     // Insert the quest into the database using the locations array
     Interface.insertToMongo = function(name, categoryName, image){
@@ -34,12 +34,12 @@ Meteor.startup(function(){
         locationIds: locations,
         image: image
       });
-    }
+    };
 
     // clear out the locations array
     Interface.clear = function(){
       locations = [];
-    }
+    };
 
     // return all public functions
     return Interface;
