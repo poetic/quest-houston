@@ -66,6 +66,11 @@ var UserSchema = new SimpleSchema({
        type: [UserLocationSchema],
        optional: true
     },
+    categoriesUnlocked: {
+       type: Object,
+       optional: true
+
+    },
     score: {
        type: Number,
        decimal: false,
