@@ -139,28 +139,53 @@ function addWondersQuest(q){
   q.insertToMongo("8 Houston Wonders", 'Landmarks', '../quest-8-wonders.jpg');
 }
 
+function addMuseumsQuest(q){
+  q.clear();
+q.addLocation(insertLocationGetUuid("The Menil Collection", "http://houmuse.com/visit/the-menil-collection/",
+                                    "1533 Sul Ross St Houston, TX 77006", 29.737365,-95.3983969,
+                                    "Works of John and Dominique de Menil", 
+                                    "Museum")); 
+q.addLocation(insertLocationGetUuid(" Houston Center for Photography", "http://houmuse.com/visit/houston-center-for-photography/", 
+                                    "1441 W. Alabama St. Houston, TX 77006", 29.738606,-95.397179,
+                                     "Photography Exhibition Gallery",
+                                     "Museum"));
+q.addLocation(insertLocationGetUuid("Rothko Chapel", "http://houmuse.com/visit/rothko-chapel/",
+                                     "3900 Yupon St Houston, TX 77006", 29.737615,-95.396166,
+                                     "Tranquil Meditative Sanctuary",
+                                     "Museum" ));
+q.addLocation(insertLocationGetUuid("The Museum of Fine Arts, Houston", "http://houmuse.com/visit/the-museum-of-fine-arts-houston/",
+                                     "1001 Bissonnet St Houston, TX 77005", 29.7266593,-95.3893331,
+                                     "63000 Works of Fine Art",
+                                     "Museum" ));
+q.addLocation(insertLocationGetUuid("Contemporary Arts Museum Houston", "http://houmuse.com/visit/contemporary-arts-museum-houston/",
+                                    "5216 Montrose Blvd Houston, TX 77006", 29.726352,-95.391465,
+                                    "Most Exciting International, National, and Regional Art",
+                                    "Museum"));
+q.addLocation(insertLocationGetUuid("THE JUNG CENTER", "http://houmuse.com/visit/the-jung-center/",
+                                      "5200 Montrose Blvd Houston, TX 77006", 29.72678,-95.391392,
+                                      "Offers more than 200 Art Classes yearly",
+                                      "Museum"));
+q.insertToMongo("Green Quest", 'Museum', '../quest-houoston/public/greendistrictmuseums.jpg');
+}
+
+
 // insert your own gps object here for local testing
 function addTestQuest(q){
 
   var poetic = {
     lat: 29.761565099999995,
     long: -95.4791111
-  };
-
-  var ironYard = {
-    lat: 29.735239500000002,
-    long: -95.3905418
-  };
+  }
 
   var myHouse = {
     lat: 30.0102269,
     long: -95.46955
-  };
+  }
 
   q.clear();
   for(var x = 0; x < 8; x++){
     q.addLocation(insertLocationGetUuid("testLocation", "1",
-                                  "1", ironYard.lat, ironYard.long,
+                                  "1", poetic.lat, poetic.long,
                                   "location for testing badges",
                                   "Testing"));
   }
@@ -181,8 +206,9 @@ function seedBadges(){
     name: "Five Locations",
     image: "../badges/5locations.png"
   });
-}
 
+
+}
 // create a location and return its uuid
 function insertLocationGetUuid(name, url, address, lat, long, description){
   var uuid = Locations.insert({
