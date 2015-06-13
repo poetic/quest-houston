@@ -100,7 +100,42 @@ function addBurgerQuest(q){
 
   q.insertToMongo("Bitin' on Burgers", "Food & Drinks", '../quest-burgers.jpg');
 }
-
+function addBlueMuseumQuest(q){
+  q.clear();
+  q.addLocation(insertLocationGetUuid("Buffalo Soldiers National Museum", "http://houmuse.com/visit/buffalo-soldiers-national-museum/",
+                                      "3816 Caroline St., Houston, TX 77004", 29.735929, -95.378047,
+                                      "African American history & American history as well",
+                                      "Museum"));
+  q.addLocation(insertLocationGetUuid("DiverseWorks", "http://houmuse.com/visit/diverseworks/",
+                                      "4102 Fannin, Suite 200 Houston, TX 77004", 29.735929,-95.378047,
+                                      "visual performing and literary art.",
+                                      "Museum" ));
+  q.addLocation(insertLocationGetUuid("Houston Museum of African American Culture", "http://houmuse.com/visit/houston-museum-of-african-american-culture/",
+                                      "4807 Caroline Street Houston, TX 77004", 29.729548,-95.382409,
+                                      "Explore through the lens of the African American experience.",
+                                      "Museum" ));
+  q.addLocation(insertLocationGetUuid("Czech Center Museum Houston", "http://houmuse.com/visit/czech-center-museum-houston/",
+                                      "4920 San Jacinto St. Houston, TX 77004", 29.728944,-95.384915,
+                                      "View rich cultural abundance of a major Slavic ethnic group",
+                                      "Museum"));
+  q.addLocation(insertLocationGetUuid("Lawndale Art Center", "http://houmuse.com/visit/lawndale-art-center/",
+                                      "4912 Main Street Houston, TX 77002", 29.729871,-95.386595,
+                                      "Houston that is dedicated to the presentation of contemporary art",
+                                      "Museum" ));
+  q.addLocation(insertLocationGetUuid("Houston Center for Contemporary Craft", "http://houmuse.com/visit/houston-center-for-contemporary-craft/",
+                                      "4848 Main Street Houston, TX 77002", 29.730596,-95.386075,
+                                      "Advance education about the process product and history of craft",
+                                      "Museum" ));
+  q.addLocation(insertLocationGetUuid("Asia Society Texas Center", "http://houmuse.com/visit/asia-society-texas-center/",
+                                      "1370 SOUTHMORE BLVD. HOUSTON, TEXAS 77004", "29.726302,-95.384557",
+                                      "Enriching programs and events within the pillars of arts and culture.",
+                                      "Museum"));
+  q.addLocation(insertLocationGetUuid("Holocaust Museum Houston", "http://houmuse.com/visit/holocaust-museum-houston/",
+                                      "5401 Caroline St. Houston, TX 77004", "29.725048,-95.385665",
+                                      "Dedicated to educating people about the Holocaust",
+                                      "Museum"));
+  q.insertToMongo("Gaining Culture", "Museums", '../houston-museums.jpg');
+}
 function addWondersQuest(q){
   q.clear();
   q.addLocation(insertLocationGetUuid("Houston Astrodome", "",
@@ -135,7 +170,6 @@ function addWondersQuest(q){
                                   "2500 Summer Street Houston, TX 77007", 29.7734365, -95.3847242,
                                   "All you need is love.",
                                   "Landmark"));
-
   q.insertToMongo("8 Houston Wonders", 'Landmarks', '../quest-8-wonders.jpg');
 }
 
