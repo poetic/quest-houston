@@ -145,17 +145,22 @@ function addTestQuest(q){
   var poetic = {
     lat: 29.761565099999995,
     long: -95.4791111
-  }
+  };
+
+  var ironYard = {
+    lat: 29.735239500000002,
+    long: -95.3905418
+  };
 
   var myHouse = {
     lat: 30.0102269,
     long: -95.46955
-  }
+  };
 
   q.clear();
   for(var x = 0; x < 8; x++){
     q.addLocation(insertLocationGetUuid("testLocation", "1",
-                                  "1", poetic.lat, poetic.long,
+                                  "1", ironYard.lat, ironYard.long,
                                   "location for testing badges",
                                   "Testing"));
   }
@@ -176,9 +181,8 @@ function seedBadges(){
     name: "Five Locations",
     image: "../badges/5locations.png"
   });
-
-
 }
+
 // create a location and return its uuid
 function insertLocationGetUuid(name, url, address, lat, long, description){
   var uuid = Locations.insert({
