@@ -12,6 +12,7 @@ Meteor.startup(function(){
   addBurgerQuest(q);
   addWondersQuest(q);
   addTestQuest(q);
+  addYellowQuest(q);
 
 });
 
@@ -103,8 +104,8 @@ function addBurgerQuest(q){
 
 function addWondersQuest(q){
   q.clear();
-  q.addLocation(insertLocationGetUuid("Houston Astrodome", "",
-                                  "8400 Kirby Drive, Houston, Texas, 77054", 29.6847238, -95.409003,
+  q.addLocation(insertLocationGetUuid("Houston Astrodome", "nrgpark.com/nrg-astrodome",
+                                  "8400 Kirby Drive, Houston, Tx 77054", 29.6847238, -95.409003,
                                   "Check it out during the Houston Rodeo",
                                   "Landmark"));
   q.addLocation(insertLocationGetUuid("NASA Johnson Space Center", "spacecenter.org",
@@ -138,6 +139,32 @@ function addWondersQuest(q){
 
   q.insertToMongo("8 Houston Wonders", 'Landmarks', '../quest-8-wonders.jpg');
 }
+
+function addYellowQuest(q){
+  q.clear();
+  q.addLocation(insertLocationGetUuid("Rice Gallery", "www.ricegallery.org/",
+                                  "6100 Main Street Houston, TX 77005", 29.718289, -95.397678,
+                                  "The only university museum devoted to site-specific installation art",
+                                  "Museum"));
+  q.addLocation(insertLocationGetUuid("Houston Zoo", "www.houstonzoo.org/",
+                                  "6200 Hermann Park Dr. Houston, TX 77030", 29.7133186, -95.3918304,
+                                  "The Houston Zoo provides a fun and inspirational experience fostering appreciation for the natural world.",
+                                  "Museum"));
+  q.addLocation(insertLocationGetUuid("Houston Museum of Natural Science", "www.hmns.org/",
+                                  "5555 Hermann Park Dr. Houston, TX 77030", 29.7220535, -95.3898499,
+                                  "Over a dozen permanent exhibit areas that examine astronomy, space, science, paleontology, wildlife, and more.",
+                                  "Museum"));
+  q.addLocation(insertLocationGetUuid("The Health Museum", "www.thehealthmuseum.org/index.aspx",
+                                  "1515 Hermann Dr. Houston, TX 77004", 29.721698, -95.38599,
+                                  "An interactive science center using multi-media and special effects technology.",
+                                  "Museum"));
+  q.addLocation(insertLocationGetUuid("Children’s Museum of Houston", "www.cmhouston.org/",
+                                  "1500 Binz St. Houston, TX 77004", 29.722658, -95.385141,
+                                  "Voted America’s No. 1 Children’s Museum by Parents Magazine",
+                                  "Museum"));
+  q.insertToMongo("Yellow Museum District", 'Museum', '../zoo.jpg');
+}
+
 
 // insert your own gps object here for local testing
 function addTestQuest(q){
