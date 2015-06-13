@@ -10,6 +10,7 @@ Meteor.startup(function(){
 
   addBreweryQuest(q);
   addBurgerQuest(q);
+  addBlueMuseumQuest(q);
   addWondersQuest(q);
   addTestQuest(q);
 
@@ -100,6 +101,7 @@ function addBurgerQuest(q){
 
   q.insertToMongo("Bitin' on Burgers", "Food & Drinks", '../quest-burgers.jpg');
 }
+
 function addBlueMuseumQuest(q){
   q.clear();
   q.addLocation(insertLocationGetUuid("Buffalo Soldiers National Museum", "http://houmuse.com/visit/buffalo-soldiers-national-museum/",
@@ -127,11 +129,11 @@ function addBlueMuseumQuest(q){
                                       "Advance education about the process product and history of craft",
                                       "Museum" ));
   q.addLocation(insertLocationGetUuid("Asia Society Texas Center", "http://houmuse.com/visit/asia-society-texas-center/",
-                                      "1370 SOUTHMORE BLVD. HOUSTON, TEXAS 77004", "29.726302,-95.384557",
+                                      "1370 SOUTHMORE BLVD. HOUSTON, TEXAS 77004", 29.726302, -95.384557,
                                       "Enriching programs and events within the pillars of arts and culture.",
                                       "Museum"));
   q.addLocation(insertLocationGetUuid("Holocaust Museum Houston", "http://houmuse.com/visit/holocaust-museum-houston/",
-                                      "5401 Caroline St. Houston, TX 77004", "29.725048,-95.385665",
+                                      "5401 Caroline St. Houston, TX 77004", 29.725048, -95.385665,
                                       "Dedicated to educating people about the Holocaust",
                                       "Museum"));
   q.insertToMongo("Gaining Culture", "Museums", '../houston-museums.jpg');
