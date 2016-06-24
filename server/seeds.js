@@ -139,6 +139,7 @@ function addBlueMuseumQuest(q){
                                       "Museum"));
   q.insertToMongo("Gaining Culture", "Museum", '../houston-museums.jpg');
 }
+
 function addWondersQuest(q){
   q.clear();
   q.addLocation(insertLocationGetUuid("Houston Astrodome", "nrgpark.com/nrg-astrodome",
@@ -268,8 +269,9 @@ function seedBadges(){
     name: "Five Locations",
     image: "../badges/5locations.png"
   });
-}
 
+
+}
 // create a location and return its uuid
 function insertLocationGetUuid(name, url, address, lat, long, description){
   var uuid = Locations.insert({
